@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "62ee6906-4240-4ab9-8e20-d844ab142308",
+		"name": "Sécurisez n'importe quel backend (Spring, Python, .NET) avec MuleSoft et Keycloak (JWT OAuth2)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39062258"
+	},
+	"item": [
+		{
+			"name": "Token Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{kc_base}}/realms/{{realm}}/protocol/openid-connect/token",
+					"host": [
+						"{{kc_base}}"
+					],
+					"path": [
+						"realms",
+						"{{realm}}",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Proxy Gateway JWT Validation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{proxy_uri}}/posts",
+					"host": [
+						"{{proxy_uri}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
