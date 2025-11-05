@@ -1,4 +1,4 @@
-# JWT & OAuth2 — Secure MuleSoft APIs with Keycloak
+# JWT & OAuth2 — Secure ANY APIs with Keycloak and MuleSoft
 
 This repository contains the code samples and requests used in my Medium article:
 
@@ -14,7 +14,7 @@ This repository contains the code samples and requests used in my Medium article
 ---
 
 ## ⚙️ Tech Stack
-- MuleSoft 
+- MuleSoft (Anypoint Platform)
 - Keycloak (OIDC Provider)
 - OAuth2 / JWT
 - Postman
