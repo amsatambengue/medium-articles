@@ -6,8 +6,8 @@ _By Amsata Mbengue (AmsaTech)_
 
 ## 🧭 Overview
 
-This Proof of Concept (POC) demonstrates how to secure ANY API using **Keycloak** as an OpenID Connect Identity Provider (IdP).  
-It illustrates the full **OAuth2 Password Grant flow**, the **JWT validation**, and the way a **MuleSoft proxy or Flex Gateway** can validate tokens in real time.
+This Proof of Concept demonstrates how APIs can be secured using Keycloak as an external Identity Provider (OAuth2 / JWT) and MuleSoft as Gateway. 
+It’s designed to help teams standardize authentication across multiple APIs with minimal configuration.
 
 The project is organized for clarity and portability — with scripts, Postman requests, and architecture documentation.
 
@@ -81,8 +81,9 @@ Expected output:
 { "message": "Access granted. Token valid." }
 ```
 
-👤 Author
+## 👤 About the author
+Amsata Mbengue – MuleSoft & DevOps Integration Engineer  
+🔗 LinkedIn: [linkedin.com/in/amsatambengue](https://linkedin.com/in/amsatambengue)  
+🧠 Medium: [medium.com/@amsatambengue](https://medium.com/@amsatambengue)  
+💼 Upwork: [upwork.com/freelancers/~01a6f5a1f5a994e5c2?mp_source=share](https://www.upwork.com/freelancers/~01a6f5a1f5a994e5c2?mp_source=share)  
 
-Amsata Mbengue
-Integration & DevOps Consultant — MuleSoft | API | Security | CI/CD | Kubernetes
-📧 amsata.mbengue@gmail.com
